@@ -1,0 +1,14 @@
+	LI	$s0, 100h
+	LI	$t1, 2
+	LI	$s1,4
+Loop:	LW	$s2, 0($s0)
+	ADD	$s2, $s2, $s1
+	SUBI	$t1, $t1, 1
+	ADDI	$s0, $s0, 4
+	SW	$s2, 0($s0)
+	BNE	$t1, $zero, Loop
+	ADD	$s3, $s3, $zero
+	NOP	$zero, $zero, $zero
+	NOP	$zero, $zero, $zero	
+	HLT		
+	HLT		

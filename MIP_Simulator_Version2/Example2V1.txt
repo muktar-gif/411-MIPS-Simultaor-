@@ -1,0 +1,14 @@
+	LI	$s0, 100h
+	LI	$s1, 1
+	LI	$s2, 2
+	LI	$s3, 3
+	LW	$s4, 0($s0)
+	LW	$s5, 4($s0)
+	LW	$s6, 8($s0)
+Storing:	SW	$s1, 12($s0)
+	SW	$s4, 16($s0)
+	SW	$s5, 20($s0)
+End:	ADD	$s3, $s3, $zero
+	ADD	$s2, $s2, $zero
+	HLT	
+	HLT	

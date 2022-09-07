@@ -1,0 +1,19 @@
+	LI	$s0, 100h
+	LI	$s1, 1
+	LI	$s2, 2
+	LI	$s3, 3
+	LW	$s4, 0($s0)
+	LW	$s5, 4($s0)
+	LW	$s6, 8($s0)
+Adding:	ADD	$s7, $s1, $s2
+	ADDI	$s3, $s3, 5
+	ADD	$s4, $s4, $s1
+	ADDI	$s5, $s5, 4
+	SUB	$s7, $s7, $s2
+	SUBI	$s6, $s6, 1
+End:	NOP	$zero, $zero, $zero
+	NOP	$zero, $zero, $zero
+	NOP	$zero, $zero, $zero
+	NOP	$zero, $zero, $zero
+	HLT	
+	HLT	

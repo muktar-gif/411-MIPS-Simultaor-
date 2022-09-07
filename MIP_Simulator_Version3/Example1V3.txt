@@ -1,0 +1,17 @@
+LI 	$s0,100h
+LI 	$s1,1
+LI 	$s2,2
+LI 	$s3,3	
+LW	 $s4,0($s0)
+ADD 	$s6, $s3, $s4
+LW 	$s5, 8($s0)
+MULT 	$s7, $s6, $s5
+SUB 	$s1, $s7, $s5
+OR 	$t1, $s3, $s6
+NOP 	$zero, $zero, $zero
+NOP 	$zero, $zero, $zero
+NOP 	$zero, $zero, $zero
+NOP 	$zero, $zero, $zero
+HLT
+HLT
+
